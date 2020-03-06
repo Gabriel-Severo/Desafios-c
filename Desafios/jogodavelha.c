@@ -24,7 +24,7 @@ int realizarJogada(char jogadas[][3], int jogador){
 	if(jogador==1){
 		jogadas[linha-1][coluna-1]='X';
 		return 2;
-	}else 
+	}else
 		jogadas[linha-1][coluna-1]='O';
 		return 1;
 }
@@ -42,7 +42,7 @@ void mostrarJogo(char jogadas[][3]){
 			printf("\t\t_____\n");
 	}
 	printf("\n");
-			
+
 }
 int finalizar(char jogadas[][3], int jogador){
 	if(jogador==1){
@@ -93,7 +93,7 @@ int main(){
 	int jogador=1, jogadorAtual=jogador, finalizado=0;
 	limparJogo(jogadas);
 	while(finalizado!=1&&finalizado!=2){
-		system("clear");
+		system("cls");
 		printf("\tJOGO DA VELHA\n\tJogador 1: X\n\tJogador 2: O\n");
 		mostrarJogo(jogadas);
 		finalizado = finalizar(jogadas, jogadorAtual);
