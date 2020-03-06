@@ -93,7 +93,7 @@ int main(){
 	int jogador=1, jogadorAtual=jogador, finalizado=0;
 	limparJogo(jogadas);
 	while(finalizado!=1&&finalizado!=2){
-		system("cls");
+		system("clear");//troque clear por cls se estiver utilizando windows
 		printf("\tJOGO DA VELHA\n\tJogador 1: X\n\tJogador 2: O\n");
 		mostrarJogo(jogadas);
 		finalizado = finalizar(jogadas, jogadorAtual);
